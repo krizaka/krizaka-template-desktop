@@ -22,7 +22,7 @@ jobs:
   desktop:
     permissions:
       contents: write
-    uses: krizaka/.github/.github/workflows/tauri-macos.yml@78dc5cbc0f0e0cf684a7e89d0d736893134e80a2 # main
+    uses: krizaka/.github/.github/workflows/tauri-macos.yml@79f6ff6292edefebc59fc968dbc2c203da81c3ea # main
     with:
       working-directory: .
       product-name: __Name__
