@@ -1,6 +1,6 @@
 //! __Name__ for the Mac. Everything a Krizaka Mac app does the same way — the folders the person grants and the files they
 //! drop (every path through the folder scope), the session in the Keychain, the native menu, deep links, the navigation
-//! guard, the update channel — is `tauri-plugin-krizaka` (krizaka-tauri-kit). Only the product's own commands go here, each
+//! guard, the update channel — is `tauri-plugin-krizaka` (krizaka-desktop). Only the product's own commands go here, each
 //! resolving its paths through the kit's one gate:
 //!
 //! ```ignore
