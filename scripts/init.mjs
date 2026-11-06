@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Starts a product from this template: node scripts/init.mjs <slug> "<Name>"
-//   slug  lowercase, letters and digits (`yomizaka`): the scheme, the bundle id com.krizaka.<slug>, the domain <slug>.com
-//   Name  how the product is written (`Yomizaka`)
+//   slug  lowercase, letters and digits (`verikora`): the scheme, the bundle id com.krizaka.<slug>, the domain <slug>.com
+//   Name  how the product is written (`Verikora`)
 // Replaces `__slug__`, `__Name__` and the bundle-id placeholder in every text file of the repository, then removes nothing: git shows what changed.
 import { execFileSync } from "node:child_process";
 import { readFileSync, writeFileSync } from "node:fs";
