@@ -2,7 +2,7 @@
 
 [![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=krizaka_krizaka-template-desktop&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=krizaka_krizaka-template-desktop) [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=krizaka_krizaka-template-desktop&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=krizaka_krizaka-template-desktop) [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=krizaka_krizaka-template-desktop&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=krizaka_krizaka-template-desktop) [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=krizaka_krizaka-template-desktop&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=krizaka_krizaka-template-desktop) [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=krizaka_krizaka-template-desktop&metric=coverage)](https://sonarcloud.io/summary/new_code?id=krizaka_krizaka-template-desktop)
 
-Start a Krizaka **Mac app** (Tauri 2) from this template. It only *wires*: what every Mac app does the same way (the folder scope,
+Start a Krizaka **Mac app** (Tauri 2) from this template. It only _wires_: what every Mac app does the same way (the folder scope,
 dropped and watched files, the Keychain session, the native menu, deep links, the navigation guard, the update channel) is
 `tauri-plugin-krizaka` of [`krizaka-desktop`](https://github.com/krizaka/krizaka-desktop) and its typed page side
 [`@krizaka/app-desktop`](https://ui.krizaka.com/packages/app-desktop); the session and the API client are
@@ -19,15 +19,15 @@ pnpm check                                       # types, UI tests, Rust tests
 pnpm tauri dev
 ```
 
-| File | What it is |
-| :-- | :-- |
-| `src-tauri/src/lib.rs` | The plugin with the product's scheme, link hosts and prefixes. Add the product's own commands, each resolving its paths through `app.kit().resolve` |
-| `src-tauri/capabilities/main.json` | `core:default`, `krizaka:default`, the title bar's drag and HTTP to the product's own addresses: no `fs`, no shell, no opener |
-| `src-tauri/Info.plist` | The deep-link scheme (`CFBundleURLTypes`) and the folder-access sentences |
-| `src/config.ts`, `src/desktop.ts` | The wiring: discovery, the Keychain session, the API client; the native side, typed |
-| `src/menu.ts`, `src/i18n/` | The native menu bar from the messages (French first, English with the same keys, tested) |
-| `src-tauri/entitlements.plist` | Hardened runtime, nothing opted out |
-| `.github/workflows/desktop.yml` | Calls `tauri-macos.yml`: checks on every PR, the arm64 `.dmg` on a `desktop-v*` tag |
+| File                               | What it is                                                                                                                                          |
+| :--------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `src-tauri/src/lib.rs`             | The plugin with the product's scheme, link hosts and prefixes. Add the product's own commands, each resolving its paths through `app.kit().resolve` |
+| `src-tauri/capabilities/main.json` | `core:default`, `krizaka:default`, the title bar's drag and HTTP to the product's own addresses: no `fs`, no shell, no opener                       |
+| `src-tauri/Info.plist`             | The deep-link scheme (`CFBundleURLTypes`) and the folder-access sentences                                                                           |
+| `src/config.ts`, `src/desktop.ts`  | The wiring: discovery, the Keychain session, the API client; the native side, typed                                                                 |
+| `src/menu.ts`, `src/i18n/`         | The native menu bar from the messages (French first, English with the same keys, tested)                                                            |
+| `src-tauri/entitlements.plist`     | Hardened runtime, nothing opted out                                                                                                                 |
+| `.github/workflows/desktop.yml`    | Calls `tauri-macos.yml`: checks on every PR, the arm64 `.dmg` on a `desktop-v*` tag                                                                 |
 
 ## Release and signing
 

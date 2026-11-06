@@ -1,4 +1,4 @@
-# __Name__ desktop — agent contract
+# **Name** desktop — agent contract
 
 > Started from `krizaka/krizaka-template-desktop`. Decision: [ADR-005](https://github.com/krizaka/.github/blob/main/docs/adr/ADR-005-tauri-app-kit.md).
 
