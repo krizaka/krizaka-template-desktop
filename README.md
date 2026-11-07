@@ -37,6 +37,7 @@ the notarisation credentials are repository secrets (`APPLE_CERTIFICATE`, `APPLE
 unsigned debug build asks for the Keychain password at every launch; that is the missing signature.
 
 <!-- krizaka:workflows:start -->
+
 ## Workflows
 
 What runs in the Actions tab of this repository.
@@ -47,4 +48,5 @@ What runs in the Actions tab of this repository.
 - **Language guards** (`lang-guards.yml`): Rust guards: rustfmt, clippy, cargo-deny, tests. Runs on every pull request, in the merge queue, on push.
 - **Scorecard** (`scorecard.yml`): OpenSSF Scorecard of the repository. Runs when branch rules change, on a schedule, on demand.
 - **Security scan** (`security.yml`): Secret scan (gitleaks) and workflow scan (zizmor); both are required checks. Runs on every pull request, in the merge queue, on push.
+
 <!-- krizaka:workflows:end -->
